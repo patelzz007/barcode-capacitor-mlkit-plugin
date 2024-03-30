@@ -21,6 +21,10 @@
 	}
 
 	<div class="zoom_ratio_wrapper">
-		<ion-range [min]="minZoomRatio" [max]="maxZoomRatio" (ionChange)="setZoomRatio($any($event))"> </ion-range>
+		<!-- <ion-range [min]="minZoomRatio" [max]="maxZoomRatio" (ionChange)="setZoomRatio($any($event))"> </ion-range> -->
+
+		<mat-slider [min]="minZoomRatio" [max]="maxZoomRatio">
+			<input (input)="setZoomRatio($any($event))" matSliderThumb />
+		</mat-slider>
 	</div>
 </ion-content>

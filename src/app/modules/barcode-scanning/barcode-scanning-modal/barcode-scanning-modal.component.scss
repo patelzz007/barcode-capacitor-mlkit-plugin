@@ -15,11 +15,14 @@ ion-content {
 }
 
 .zoom_ratio_wrapper {
-	padding: 10px;
-	border: 2px solid white;
 	position: absolute;
 	left: 50%;
-	top: 70%;
-	transform: translate(-70%, -70%);
+	bottom: 16px;
+	transform: translateX(-50%);
 	width: 50%;
+	border: 2px solid red;
+
+	mat-slider {
+		width: 90%;
+	}
 }

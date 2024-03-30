@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Input, NgZone, OnDestroy, OnInit, ViewChild } from "@angular/core";
+import { MatSliderChange } from "@angular/material/slider";
 import { DialogService } from "@app/core";
 import {
 	Barcode,
@@ -18,6 +19,10 @@ import { InputCustomEvent } from "@ionic/angular";
 	styleUrls: ["./barcode-scanning-modal.component.scss"],
 })
 export class BarcodeScanningModalComponent implements OnInit, AfterViewInit, OnDestroy {
+	// Declare variables to hold references to DOM elements
+	public slider: HTMLInputElement | null = null;
+	public output: HTMLElement | null = null;
+
 	@Input()
 	public formats: BarcodeFormat[] = [];
 	@Input()
@@ -51,12 +56,23 @@ export class BarcodeScanningModalComponent implements OnInit, AfterViewInit, OnD
 		this.stopScan();
 	}
 
-	public setZoomRatio(event: InputCustomEvent): void {
-		if (!event.detail.value) return;
+	public setZoomRatio(event: Event): void {
+		console.log("setZoomRatio", event);
 
-		BarcodeScanner.setZoomRatio({
-			zoomRatio: parseInt(event.detail.value as any, 10),
-		});
+		// Check if the event target is an HTMLInputElement
+		if (!(event.target instanceof HTMLInputElement)) return;
+
+		const targetValue = event.target.value;
+
+		// Check if targetValue is null, undefined, or empty string
+		if (!targetValue) return;
+
+		const zoomRatio = parseInt(targetValue, 10);
+
+		// Check if zoomRatio is NaN
+		if (isNaN(zoomRatio)) return;
+
+		BarcodeScanner.setZoomRatio({ zoomRatio });
 	}
 
 	public async closeModal(barcode?: Barcode): Promise<void> {

@@ -2,9 +2,12 @@
   "version": "6.0",
   "nxVersion": "18.2.1",
   "deps": {
+    "@angular/animations": "17.3.2",
+    "@angular/cdk": "17.3.2",
     "@angular/common": "17.3.2",
     "@angular/core": "17.3.2",
     "@angular/forms": "17.3.2",
+    "@angular/material": "17.3.2",
     "@angular/platform-browser": "17.3.2",
     "@angular/platform-browser-dynamic": "17.3.2",
     "@angular/router": "17.3.2",
