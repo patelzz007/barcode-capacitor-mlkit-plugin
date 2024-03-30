@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
+    "build": "clear && ng build --configuration production",
     "test": "ng test",
     "test:ci": "ng test --watch=false --progress=false --code-coverage --browsers=HeadlessChrome",
     "lint": "ng lint && npm run prettier -- --check",

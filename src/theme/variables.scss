@@ -244,12 +244,12 @@ body.barcode-scanning-active {
   --ion-background-color: transparent;
 }
 
-.barcode-scanning-modal {
+.barcode_scanning_modal {
   visibility: visible;
 }
 
 @media (prefers-color-scheme: dark) {
-  .barcode-scanning-modal {
+  .barcode_scanning_modal {
     --background: transparent;
     --ion-background-color: transparent;
   }

@@ -8,7 +8,7 @@ import {
   LensFacing,
 } from '@capacitor-mlkit/barcode-scanning';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
-import { BarcodeScanningModalComponent } from './barcode-scanning-modal.component';
+import { BarcodeScanningModalComponent } from './barcode-scanning-modal/barcode-scanning-modal.component';
 
 @Component({
   selector: 'app-barcode-scanning',
@@ -68,7 +68,7 @@ export class BarcodeScanningPage implements OnInit {
     const element = await this.dialogService.showModal({
       component: BarcodeScanningModalComponent,
       // Set `visibility` to `visible` to show the modal (see `src/theme/variables.scss`)
-      cssClass: 'barcode-scanning-modal',
+      cssClass: 'barcode_scanning_modal',
       showBackdrop: false,
       componentProps: {
         formats: formats,
@@ -77,18 +77,14 @@ export class BarcodeScanningPage implements OnInit {
     });
     element.onDidDismiss().then((result) => {
       const barcode: Barcode | undefined = result.data?.barcode;
-      if (barcode) {
-        this.barcodes = [barcode];
-      }
+      if (barcode) this.barcodes = [barcode];
     });
   }
 
   public async readBarcodeFromImage(): Promise<void> {
     const { files } = await FilePicker.pickImages({ multiple: false });
     const path = files[0]?.path;
-    if (!path) {
-      return;
-    }
+    if (!path) return;
     const formats = this.formGroup.get('formats')?.value || [];
     const { barcodes } = await BarcodeScanner.readBarcodesFromImage({
       path,
