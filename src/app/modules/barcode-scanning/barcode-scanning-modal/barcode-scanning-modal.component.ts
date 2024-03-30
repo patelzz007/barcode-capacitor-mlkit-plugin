@@ -82,7 +82,7 @@ export class BarcodeScanningModalComponent
 
   private async startScan(): Promise<void> {
     // Hide everything behind the modal (see `src/theme/variables.scss`)
-    document.querySelector('body')?.classList.add('barcode-scanning-active');
+    document.querySelector('body')?.classList.add('barcode_scanning_active');
 
     const options: StartScanOptions = {
       formats: this.formats,

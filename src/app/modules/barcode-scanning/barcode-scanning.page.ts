@@ -76,6 +76,7 @@ export class BarcodeScanningPage implements OnInit {
       },
     });
     element.onDidDismiss().then((result) => {
+      console.log('Start Scan :',result);
       const barcode: Barcode | undefined = result.data?.barcode;
       if (barcode) this.barcodes = [barcode];
     });
