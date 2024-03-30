@@ -1,33 +1,17 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+	selector: "app-home",
+	templateUrl: "./home.page.html",
+	styleUrls: ["./home.page.scss"],
 })
 export class HomePage {
-  public plugins = [
-    {
-      name: 'Barcode Scanning',
-      url: '/barcode-scanning',
-    },
-    {
-      name: 'Face Detection',
-      url: '/face-detection',
-    },
-    {
-      name: 'Face Mesh Detection',
-      url: '/face-mesh-detection',
-    },
-    {
-      name: 'Selfie Segmentation',
-      url: '/selfie-segmentation',
-    },
-    {
-      name: 'Translation',
-      url: '/translation',
-    },
-  ];
+	public plugins = [
+		{
+			name: "Barcode Scanning",
+			url: "/barcode-scanning",
+		},
+	];
 
-  constructor() {}
+	constructor() {}
 }

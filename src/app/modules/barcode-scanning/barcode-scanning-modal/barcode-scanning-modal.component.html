@@ -1,31 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Scanning</ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="closeModal()">
-        <ion-icon name="close"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>Scanning</ion-title>
+		<ion-buttons slot="end">
+			<ion-button (click)="closeModal()">
+				<ion-icon name="close"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div #square class="square"></div>
+	<div #square class="square"></div>
 
-  @if (isTorchAvailable) {
-    <ion-fab slot="fixed" horizontal="end" vertical="bottom">
-      <ion-fab-button [disabled]="!isTorchAvailable" (click)="toggleTorch()">
-        <ion-icon name="flashlight"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  }
+	@if (isTorchAvailable) {
+		<ion-fab slot="fixed" horizontal="end" vertical="bottom">
+			<ion-fab-button [disabled]="!isTorchAvailable" (click)="toggleTorch()">
+				<ion-icon name="flashlight"></ion-icon>
+			</ion-fab-button>
+		</ion-fab>
+	}
 
-  <div class="zoom_ratio_wrapper">
-    <ion-range
-      [min]="minZoomRatio"
-      [max]="maxZoomRatio"
-      (ionChange)="setZoomRatio($any($event))"
-    >
-    </ion-range>
-  </div>
+	<div class="zoom_ratio_wrapper">
+		<ion-range [min]="minZoomRatio" [max]="maxZoomRatio" (ionChange)="setZoomRatio($any($event))"> </ion-range>
+	</div>
 </ion-content>

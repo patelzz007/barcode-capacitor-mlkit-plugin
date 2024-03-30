@@ -1,1 +1,1 @@
-export * from './angular-mocks';
+export * from "./angular-mocks";

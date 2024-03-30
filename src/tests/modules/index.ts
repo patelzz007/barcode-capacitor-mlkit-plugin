@@ -1,1 +1,1 @@
-export * from './shared-testing.module';
+export * from "./shared-testing.module";

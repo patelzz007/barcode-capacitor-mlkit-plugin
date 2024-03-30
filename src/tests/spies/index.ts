@@ -1,1 +1,1 @@
-export * from './ionic-spies';
+export * from "./ionic-spies";
