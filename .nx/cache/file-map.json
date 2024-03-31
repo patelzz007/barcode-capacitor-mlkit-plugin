@@ -122,6 +122,10 @@
         "hash": "1499268308230608855"
       },
       {
+        "file": ".prettierrc",
+        "hash": "474562771949329152"
+      },
+      {
         "file": "LICENSE",
         "hash": "3881026440952528900"
       },
@@ -147,7 +151,7 @@
       },
       {
         "file": "android/.idea/misc.xml",
-        "hash": "6322029007909227539"
+        "hash": "1996164415594446212"
       },
       {
         "file": "android/app/.gitignore",
@@ -171,7 +175,7 @@
       },
       {
         "file": "android/app/src/main/AndroidManifest.xml",
-        "hash": "15143078514206279353"
+        "hash": "11672173697518025287"
       },
       {
         "file": "android/app/src/main/java/dev/robingenz/capacitorjs/demo/mlkitplugins/MainActivity.java",
@@ -359,7 +363,7 @@
       },
       {
         "file": "angular.json",
-        "hash": "11249124991023551286"
+        "hash": "18342467631360245940"
       },
       {
         "file": "capacitor.config.json",
@@ -459,19 +463,19 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "14540544488528017026"
+        "hash": "10776177648545219848"
       },
       {
         "file": "package.json",
-        "hash": "11686371602064654198"
+        "hash": "18144395165748898182"
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "17601109333075118943"
+        "hash": "2194351707044081029"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "12139992690072916112"
+        "hash": "963966834410986521"
       },
       {
         "file": "src/app/app.component.scss",
@@ -479,59 +483,67 @@
       },
       {
         "file": "src/app/app.component.spec.ts",
-        "hash": "1347623554951372134"
+        "hash": "15781565448411417830"
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "3298285516620454244"
+        "hash": "180284136691922464"
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "17903269876130369968"
+        "hash": "7376954432854657016"
       },
       {
         "file": "src/app/core/core.module.ts",
-        "hash": "5554735985907201147"
+        "hash": "2087840172733654672"
       },
       {
         "file": "src/app/core/index.ts",
-        "hash": "7195829510252814199"
+        "hash": "1991054501713451496"
       },
       {
         "file": "src/app/core/services/dialog/dialog.service.spec.ts",
-        "hash": "11679510379589330291"
+        "hash": "12200163713456246743"
       },
       {
         "file": "src/app/core/services/dialog/dialog.service.ts",
-        "hash": "16693529537718845481"
+        "hash": "12359861824728305381"
       },
       {
         "file": "src/app/core/services/global-error-handler/global-error-handler.service.spec.ts",
-        "hash": "11997781494510002678"
+        "hash": "14191170747292639902"
       },
       {
         "file": "src/app/core/services/global-error-handler/global-error-handler.service.ts",
-        "hash": "17466324426789035966"
+        "hash": "18154287055110098060"
       },
       {
         "file": "src/app/core/services/index.ts",
-        "hash": "16324387208894638725"
+        "hash": "10526105525596376431"
       },
       {
-        "file": "src/app/modules/barcode-scanning/barcode-scanning-modal.component.ts",
-        "hash": "471881786693651213"
+        "file": "src/app/modules/barcode-scanning/barcode-scanning-modal/barcode-scanning-modal.component.html",
+        "hash": "2750108428377797621"
+      },
+      {
+        "file": "src/app/modules/barcode-scanning/barcode-scanning-modal/barcode-scanning-modal.component.scss",
+        "hash": "7732619266451070701"
+      },
+      {
+        "file": "src/app/modules/barcode-scanning/barcode-scanning-modal/barcode-scanning-modal.component.ts",
+        "hash": "14123918436491966568"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning-routing.module.ts",
-        "hash": "5993071818989319130"
+        "hash": "1151608793700537927"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning.module.ts",
-        "hash": "1803323739634554578"
+        "hash": "2409493310470093760"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning.page.html",
-        "hash": "6352154016333104974"
+        "hash": "10395851214476857100"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning.page.scss",
@@ -539,75 +551,23 @@
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning.page.spec.ts",
-        "hash": "2549535628637031233"
+        "hash": "11538401010189118240"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning.page.ts",
-        "hash": "381793219971971917"
-      },
-      {
-        "file": "src/app/modules/face-detection/face-detection-routing.module.ts",
-        "hash": "9390610999558161916"
-      },
-      {
-        "file": "src/app/modules/face-detection/face-detection.module.ts",
-        "hash": "4181929299577169666"
-      },
-      {
-        "file": "src/app/modules/face-detection/face-detection.page.html",
-        "hash": "4306425725015595957"
-      },
-      {
-        "file": "src/app/modules/face-detection/face-detection.page.scss",
-        "hash": "2859833727650585545"
-      },
-      {
-        "file": "src/app/modules/face-detection/face-detection.page.spec.ts",
-        "hash": "8725805650105626783"
-      },
-      {
-        "file": "src/app/modules/face-detection/face-detection.page.ts",
-        "hash": "1095087368185202824"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection-routing.module.ts",
-        "hash": "13367604073989345134"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection.module.ts",
-        "hash": "16224983886419244219"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection.page.html",
-        "hash": "10709861088332005998"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection.page.scss",
-        "hash": "17404029097882314820"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection.page.spec.ts",
-        "hash": "6197538621334712501"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection.page.ts",
-        "hash": "9491662617036553890"
-      },
-      {
-        "file": "src/app/modules/face-mesh-detection/face-mesh-detection.pipe.ts",
-        "hash": "12647590647073119798"
+        "hash": "5367076518410145504"
       },
       {
         "file": "src/app/modules/home/home-routing.module.ts",
-        "hash": "3514565460457968105"
+        "hash": "13622841064415320054"
       },
       {
         "file": "src/app/modules/home/home.module.ts",
-        "hash": "4072239531895523579"
+        "hash": "10786193915250567284"
       },
       {
         "file": "src/app/modules/home/home.page.html",
-        "hash": "332446583444909546"
+        "hash": "16338494160772012709"
       },
       {
         "file": "src/app/modules/home/home.page.scss",
@@ -615,67 +575,19 @@
       },
       {
         "file": "src/app/modules/home/home.page.spec.ts",
-        "hash": "924634740715917795"
+        "hash": "17707143797351041917"
       },
       {
         "file": "src/app/modules/home/home.page.ts",
-        "hash": "15527193116774937011"
-      },
-      {
-        "file": "src/app/modules/selfie-segmentation/selfie-segmentation-routing.module.ts",
-        "hash": "13706640291144120519"
-      },
-      {
-        "file": "src/app/modules/selfie-segmentation/selfie-segmentation.module.ts",
-        "hash": "9956980236697879807"
-      },
-      {
-        "file": "src/app/modules/selfie-segmentation/selfie-segmentation.page.html",
-        "hash": "2862742845601304799"
-      },
-      {
-        "file": "src/app/modules/selfie-segmentation/selfie-segmentation.page.scss",
-        "hash": "6659106236432975977"
-      },
-      {
-        "file": "src/app/modules/selfie-segmentation/selfie-segmentation.page.spec.ts",
-        "hash": "1630147248759985108"
-      },
-      {
-        "file": "src/app/modules/selfie-segmentation/selfie-segmentation.page.ts",
-        "hash": "15531466475841588531"
-      },
-      {
-        "file": "src/app/modules/translation/translation-routing.module.ts",
-        "hash": "15207095217466749045"
-      },
-      {
-        "file": "src/app/modules/translation/translation.module.ts",
-        "hash": "18224663977288704068"
-      },
-      {
-        "file": "src/app/modules/translation/translation.page.html",
-        "hash": "16651453959711326952"
-      },
-      {
-        "file": "src/app/modules/translation/translation.page.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "src/app/modules/translation/translation.page.spec.ts",
-        "hash": "17449957053377704002"
-      },
-      {
-        "file": "src/app/modules/translation/translation.page.ts",
-        "hash": "12278352893646560177"
+        "hash": "11838723862096643440"
       },
       {
         "file": "src/app/shared/index.ts",
-        "hash": "14948145554325155152"
+        "hash": "11451754299635732123"
       },
       {
         "file": "src/app/shared/shared.module.ts",
-        "hash": "6799760763838527273"
+        "hash": "12787008535134784192"
       },
       {
         "file": "src/assets/icon/favicon.png",
@@ -687,11 +599,11 @@
       },
       {
         "file": "src/environments/environment.prod.ts",
-        "hash": "10220522844224226756"
+        "hash": "4306127076465119039"
       },
       {
         "file": "src/environments/environment.ts",
-        "hash": "17793792023430508628"
+        "hash": "1768716775977043476"
       },
       {
         "file": "src/global.scss",
@@ -699,51 +611,51 @@
       },
       {
         "file": "src/index.html",
-        "hash": "17086394375195079561"
+        "hash": "3062596035075170587"
       },
       {
         "file": "src/main.ts",
-        "hash": "17921985577026685694"
+        "hash": "17313727457053243285"
       },
       {
         "file": "src/polyfills.ts",
-        "hash": "4865698060688252452"
+        "hash": "11809176765363457008"
       },
       {
         "file": "src/test.ts",
-        "hash": "14011552415619882844"
+        "hash": "4726314994667101228"
       },
       {
         "file": "src/tests/mocks/angular-mocks.ts",
-        "hash": "5529504493900354744"
+        "hash": "7056260368531815530"
       },
       {
         "file": "src/tests/mocks/index.ts",
-        "hash": "5449012284420757961"
+        "hash": "18127845672381985243"
       },
       {
         "file": "src/tests/modules/index.ts",
-        "hash": "8695098518530043331"
+        "hash": "18159896554392302884"
       },
       {
         "file": "src/tests/modules/shared-testing.module.ts",
-        "hash": "12041650786601893523"
+        "hash": "10176017671432211050"
       },
       {
         "file": "src/tests/spies/index.ts",
-        "hash": "17259572202416834558"
+        "hash": "5954209898303084043"
       },
       {
         "file": "src/tests/spies/ionic-spies.ts",
-        "hash": "10165747372473119198"
+        "hash": "3461642519906494996"
       },
       {
         "file": "src/tests/test-setup.ts",
-        "hash": "13834234771908738001"
+        "hash": "8550532149356746137"
       },
       {
         "file": "src/theme/variables.scss",
-        "hash": "13141215851118541220"
+        "hash": "9192309835535692887"
       },
       {
         "file": "src/zone-flags.ts",
