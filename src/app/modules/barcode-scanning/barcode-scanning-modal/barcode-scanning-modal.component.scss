@@ -8,9 +8,8 @@ ion-content {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 16px;
-	width: 200px;
-	height: 200px;
-	/* position: relative; */
+	width: 250px;
+	height: 250px;
 
 	--b: 5px;
 	--c: repeating-linear-gradient(45deg, red, blue); /* color of the border */
@@ -36,7 +35,7 @@ ion-content {
 
 .zoom_ratio_wrapper {
 	background-color: white;
-	padding: 10px;
+	padding: 8px;
 	position: absolute;
 	left: 50%;
 	bottom: 16px;
