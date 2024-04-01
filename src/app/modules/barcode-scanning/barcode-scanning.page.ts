@@ -60,15 +60,15 @@ export class BarcodeScanningPage implements OnInit {
 			// Set `visibility` to `visible` to show the modal (see `src/theme/variables.scss`)
 			cssClass: "barcode_scanning_modal",
 			showBackdrop: false,
-			componentProps: {
-				formats: formats,
-				lensFacing: lensFacing,
-			},
+			componentProps: { formats, lensFacing },
 		});
 		element.onDidDismiss().then(result => {
 			console.log("Start Scan :", result);
 			const barcode: Barcode | undefined = result.data?.barcode;
-			if (barcode) this.barcodes = [barcode];
+			if (barcode) {
+				this.barcodes = [barcode];
+				console.log("Start Scan :", this.barcodes);
+			}
 		});
 	}
 
@@ -82,14 +82,15 @@ export class BarcodeScanningPage implements OnInit {
 			formats,
 		});
 		this.barcodes = barcodes;
+		console.log("Read Barcode From Image :", this.barcodes);
 	}
 
 	public async scan(): Promise<void> {
 		const formats = this.formGroup.get("formats")?.value || [];
-		const { barcodes } = await BarcodeScanner.scan({
-			formats,
-		});
+		const { barcodes } = await BarcodeScanner.scan({ formats });
 		this.barcodes = barcodes;
+
+		console.log("Scan :", this.barcodes);
 	}
 
 	public async openSettings(): Promise<void> {

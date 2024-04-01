@@ -523,11 +523,11 @@
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning-modal/barcode-scanning-modal.component.html",
-        "hash": "2750108428377797621"
+        "hash": "7817470531425574899"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning-modal/barcode-scanning-modal.component.scss",
-        "hash": "7732619266451070701"
+        "hash": "15815293612092513378"
       },
       {
         "file": "src/app/modules/barcode-scanning/barcode-scanning-modal/barcode-scanning-modal.component.ts",
